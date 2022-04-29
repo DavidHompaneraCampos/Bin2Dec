@@ -1,0 +1,3 @@
+function bin2dec() {
+
+}
