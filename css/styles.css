@@ -7,6 +7,7 @@ body {
 
 * {
     font-family: 'Quicksand', sans-serif;
+    text-align: center;
 }
 
 .flex {
@@ -24,10 +25,7 @@ input[type=number] {
     background-color: black;
     border: 1px solid white;
     color: white;
-}
-
-h1 {
-    text-align: center;
+    border-radius: 7px;
 }
 
 input {
@@ -41,4 +39,12 @@ span {
 
 p {
     color: white;
+}
+
+#bien {
+    color: green;
+}
+
+#mal {
+    color: red;
 }
