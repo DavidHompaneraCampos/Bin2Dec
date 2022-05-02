@@ -5,18 +5,17 @@ function bin2dec() {
     var respuesta = document.getElementById('respuesta')
 
     respuesta.innerHTML = parseInt(total, 2);
-
-    var num = total.charAt(total.length - 1)
-    if (num == 0 || num == 1) {
-        bien.innerHTML = 'Aquí está tu conversión'
-        mal.innerHTML = ''
-    }
-    else if (num == '') {
+    if (total.length == 0) {
         bien.innerHTML = ''
         mal.innerHTML = ''
         respuesta.innerHTML = 'Introduce un valor...'
     }
-    else {
+    var num = total.charAt(total.length - 1)
+
+    if (num == 0 || num == 1) {
+        bien.innerHTML = 'Aquí está tu conversión'
+        mal.innerHTML = ''
+    } else {
         respuesta.innerHTML = 'Introduce un número binario, por favor.'
         bien.innerHTML = ''
         mal.innerHTML = 'Has intruducio un numero no binario, introduce "1" o "0" para que funcione.'
